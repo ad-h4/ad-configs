@@ -1,1 +1,3 @@
-"coc.preferences.formatOnSaveFiletypes": ["css", "Markdown", "javascript", "typescript", "jsx", "tsx"]
+{
+  "coc.preferences.formatOnSaveFiletypes":["css", "Markdown", "javascript", "typescript", "jsx", "tsx", "md", "yaml"]
+}

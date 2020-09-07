@@ -10,6 +10,7 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/alex/.oh-my-zsh"
+export PATH="/usr/local/opt/python@3.7/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -139,6 +140,9 @@ function chpwd() {
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias git="GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa' git"
+
+alias gbranchnuke="git branch | grep -v "master" | xargs git branch -D"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
